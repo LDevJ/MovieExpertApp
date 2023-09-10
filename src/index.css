@@ -4,7 +4,7 @@
 }
 
 body {
-  padding: 60px;
+  padding: 10px 60px 60px 60px;
 }
 
 input {
@@ -18,13 +18,22 @@ input {
   width: 100%;
 }
 
+h1{
+  font-size: 3rem;
+  background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: px;
+}
+
 h2 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 h3 {
-  font-size: 3rem;
-  margin-bottom: 5px;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
 }
 
 .card-grid {

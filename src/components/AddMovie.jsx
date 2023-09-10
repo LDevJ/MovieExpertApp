@@ -6,7 +6,6 @@ export const AddMovie = ({onAddMovie}) => {
 
     const onChangeInput = (e) => {
         setInputValue(e.target.value)
-        // console.log(e.target.value);
     }
 
     const onSubmit = (e) => {
@@ -21,7 +20,7 @@ export const AddMovie = ({onAddMovie}) => {
     <form onSubmit={onSubmit}>
         <input 
         type="text"
-        placeholder='Busqueda por peliculas'
+        placeholder='Avengers ...'
         value={inputValue}
         onChange={onChangeInput} 
         />

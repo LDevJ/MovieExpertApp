@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
-import { AddMovie } from './components/AddMovie'
-import { CardMovie } from './components/CardMovie'
+import { AddMovie, CardMovie } from './components'
 
 export const MovieExpertApp = () => {
 
-    const [movies, setMovies] = useState(['Avengers'])
+    const [movies, setMovies] = useState([''])
   
     const onAddMovie = (newMovie) => {
         if(movies.includes(newMovie)) return;
@@ -12,15 +11,10 @@ export const MovieExpertApp = () => {
     }
   return (
     <>
-    {/* Titulo */}
     <h1>MovieExpertApp</h1>
     
-    {/* Buscador */}
     <AddMovie onAddMovie={onAddMovie}/>
 
-
-    {/* Listado de Movies */}
-        {/* Movie */}
     <div>
         {movies.map( (movie) => {
             return (
